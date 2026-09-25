@@ -1,0 +1,18 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f2f1ee"/>
+      <stop offset="100%" stop-color="#d9d4cf"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg1)"/>
+  <g transform="translate(80,60)">
+    <path d="M160 90 L95 170 L120 280 L145 286 L165 740 L640 740 L660 286 L685 280 L710 170 L645 90 L520 140 L480 250 L320 250 L280 140 Z" fill="#0f0f10"/>
+    <path d="M220 170 L300 220 L500 220 L580 170 L645 90 L595 80 L520 120 L480 250 L320 250 L280 120 L205 80 L160 90 Z" fill="#1b1d1f" opacity="0.95"/>
+    <circle cx="400" cy="350" r="96" fill="#f7f7f7" opacity="0.95"/>
+    <circle cx="400" cy="350" r="72" fill="#111"/>
+    <path d="M338 326 L360 354 L400 334 L440 354 L462 326 L470 439 L332 439 Z" fill="#ffffff" opacity="0.9"/>
+    <text x="400" y="368" text-anchor="middle" font-size="54" font-family="Arial, Helvetica, sans-serif" fill="#fff" font-weight="900" letter-spacing="-4">WN</text>
+    <path d="M310 205 L350 258 L450 258 L490 205" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+  </g>
+</svg>

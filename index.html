@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Why Not — streetwear premium, accessoires haut de gamme et livraison partout au Sénégal."
+    />
+    <title>Why Not | Streetwear Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand-wrap" aria-label="Logo Why Not">
+          <div class="brand-mark">WN</div>
+          <div class="brand-copy">
+            <span class="brand-name">WHY NOT</span>
+            <small>DARE. DREAM. DO.</small>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="#collection">Collection</a>
+          <a href="#accessoires">Accessoires</a>
+          <a href="#livraison">Livraison</a>
+          <a href="#support">Support</a>
+        </nav>
+
+        <button class="cart-button" id="toggleCart" type="button">
+          <span>Panier</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Édition premium</p>
+          <h1>WHY NOT</h1>
+          <p class="lead">
+            Streetwear minimaliste, pensé pour ceux qui osent le style, la
+            qualité et la présence.
+          </p>
+          <div class="cta-row">
+            <a class="cta primary" href="#collection">Découvrir la collection</a>
+            <a class="cta secondary" href="#accessoires">Voir les accessoires</a>
+          </div>
+
+          <ul class="hero-stats">
+            <li><strong>+10k</strong><span>clients satisfaits</span></li>
+            <li><strong>24/7</strong><span>support client</span></li>
+            <li><strong>48h</strong><span>livraison partout</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="Produits Why Not">
+          <div class="visual-card visual-main">
+            <div class="product-illustration pull-illustration">
+              <div class="garment pull">
+                <span class="logo-mark">WN</span>
+              </div>
+            </div>
+          </div>
+          <div class="visual-card visual-small">
+            <div class="product-illustration tee-illustration">
+              <div class="garment tee">
+                <span class="logo-mark">WN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase container">
+        <div class="section-heading">
+          <p>Collection</p>
+          <h2>Essentiel streetwear</h2>
+        </div>
+
+        <div class="filter-row" aria-label="Filtres de produits">
+          <button class="filter-btn active" data-filter="all" type="button">Tous</button>
+          <button class="filter-btn" data-filter="T-shirt" type="button">T-shirts</button>
+          <button class="filter-btn" data-filter="Short" type="button">Shorts</button>
+          <button class="filter-btn" data-filter="Pull" type="button">Pulls</button>
+          <button class="filter-btn" data-filter="Casquette" type="button">Casquettes</button>
+        </div>
+
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="accessoires" class="accessories container">
+        <div class="section-heading">
+          <p>Accessoires</p>
+          <h2>Style complet & premium</h2>
+        </div>
+
+        <div id="accessoryGrid" class="accessory-grid"></div>
+      </section>
+
+      <section class="experience container">
+        <div class="feature-box">
+          <span class="feature-icon">✓</span>
+          <div>
+            <h3>Qualité premium</h3>
+            <p>Des matières sélectionnées pour le confort et la durabilité.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <span class="feature-icon">✦</span>
+          <div>
+            <h3>Design intemporel</h3>
+            <p>Des silhouettes élégantes avec une identité visuelle minimaliste.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <span class="feature-icon">◌</span>
+          <div>
+            <h3>Livraison rapide</h3>
+            <p>Suivi en temps réel partout au Sénégal, de Dakar à l’intérieur.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="livraison" class="delivery container">
+        <div class="delivery-copy">
+          <p class="eyebrow">Livraison & suivi</p>
+          <h2>Expédition partout au Sénégal</h2>
+          <p>
+            Chaque commande est traitée avec sécurité, puis suivie en temps réel
+            jusqu’à la réception par le client.
+          </p>
+
+          <div class="track-card">
+            <div class="track-header">
+              <span>Commande #WN-2847</span>
+              <strong>En cours</strong>
+            </div>
+            <div class="progress-track">
+              <span class="progress-fill" style="width: 72%"></span>
+            </div>
+            <ul class="track-steps">
+              <li class="done">Commande validée</li>
+              <li class="done">Emballage</li>
+              <li class="active">En transit</li>
+              <li>Livrée</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="payment-panel">
+          <h3>Paiement sécurisé</h3>
+          <form class="payment-form" id="paymentForm">
+            <label>
+              Nom sur la carte
+              <input type="text" placeholder="Mamadou Sarr" required />
+            </label>
+            <label>
+              Numéro de carte
+              <input type="text" placeholder="•••• •••• •••• 4821" required />
+            </label>
+            <div class="split-fields">
+              <label>
+                Expiration
+                <input type="text" placeholder="MM/AA" required />
+              </label>
+              <label>
+                CVV
+                <input type="text" placeholder="123" required />
+              </label>
+            </div>
+            <button type="submit" class="checkout-button">Payer maintenant</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="promo container">
+        <div class="promo-copy">
+          <p class="eyebrow">Promotions</p>
+          <h2>Notifications exclusives</h2>
+          <p>Recevez les promos, nouveaux arrivages et offres flash Why Not.</p>
+        </div>
+
+        <form id="promoForm" class="promo-form">
+          <input type="email" placeholder="Votre adresse e-mail" required />
+          <button type="submit">S’inscrire</button>
+        </form>
+      </section>
+
+      <section id="support" class="support container">
+        <div class="section-heading">
+          <p>Support client</p>
+          <h2>Assistance rapide</h2>
+        </div>
+
+        <div class="support-layout">
+          <div class="chat-window" aria-live="polite">
+            <div class="chat-message assistant">
+              Bonjour ! Je peux vous aider pour votre commande, le suivi ou les
+              tailles. Que cherchez-vous ?
+            </div>
+            <div class="chat-message user">Je souhaite une livraison à Dakar.</div>
+            <div class="chat-message assistant">
+              C’est parfait, la livraison à Dakar est disponible sous 48h avec
+              suivi en temps réel.
+            </div>
+          </div>
+
+          <form id="chatForm" class="chat-form">
+            <input
+              type="text"
+              id="chatInput"
+              placeholder="Écrivez votre message..."
+              autocomplete="off"
+            />
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Panier d'achat">
+      <div class="cart-header">
+        <h3>Mon panier</h3>
+        <button type="button" class="close-cart" id="closeCart" aria-label="Fermer le panier">
+          ×
+        </button>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="cart-summary">
+        <div>
+          <span>Sous-total</span>
+          <strong id="cartSubtotal">0 FCFA</strong>
+        </div>
+        <div>
+          <span>Livraison</span>
+          <strong>Gratuite</strong>
+        </div>
+        <div class="total-row">
+          <span>Total</span>
+          <strong id="cartTotal">0 FCFA</strong>
+        </div>
+        <button type="button" class="checkout-button full" id="checkoutButton">
+          Finaliser l’achat
+        </button>
+      </div>
+    </aside>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand-mark small">WN</div>
+          <p>WHY NOT</p>
+        </div>
+        <div>
+          <h4>Suivez-nous</h4>
+          <p>Instagram • TikTok • Facebook</p>
+        </div>
+        <div>
+          <h4>Service client</h4>
+          <p>+221 77 000 00 00</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

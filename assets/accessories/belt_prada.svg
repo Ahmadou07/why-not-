@@ -1,0 +1,12 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#eee9e3"/>
+  <g transform="translate(120,180)">
+    <rect x="90" y="130" width="420" height="90" rx="30" fill="#111"/>
+    <rect x="120" y="220" width="360" height="250" rx="34" fill="#181a1d"/>
+    <rect x="140" y="285" width="320" height="26" rx="13" fill="#f6f3ef" opacity="0.8"/>
+    <rect x="150" y="320" width="300" height="18" rx="9" fill="#f6f3ef" opacity="0.62"/>
+    <rect x="100" y="460" width="380" height="90" rx="30" fill="#111"/>
+    <rect x="230" y="52" width="130" height="80" rx="18" fill="#f3efe9"/>
+    <text x="295" y="101" text-anchor="middle" font-size="34" font-family="Arial, Helvetica, sans-serif" fill="#111" font-weight="800">WN</text>
+  </g>
+</svg>
